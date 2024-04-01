@@ -433,9 +433,7 @@ footer .section-container-alt{
     #contact .section-container{
         flex-direction: column;
     }
-}
 
-@media screen and (max-width: 800px) {
     #animals .animal-container{
         flex-direction: column;
     }
@@ -443,6 +441,10 @@ footer .section-container-alt{
     #animals .animal-container img{
         align-self: center;
     }
+}
+
+@media screen and (max-width: 800px) {
+    
 }
 
 @media screen and (max-width: 400px){

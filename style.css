@@ -3,23 +3,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
 body{
     font-family: "Poppins", sans-serif;
-    background: peachpuff;
+    background-color: white;
 }
 
-section, nav{
-    background: pink;
+nav{
+    background-color: white;
 }
+
 
 html{
     scroll-behavior: smooth;
 }
 
-p{color: grey;
+p{color: black;
 
 }
 
@@ -145,37 +147,50 @@ a:hover{
 
 /* sections */
 
-section{
-    padding-top: 4vh;
-    margin: 5rem 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-}
 
 .section-container{
     display:flex;
+    margin: 0 auto;
+    max-width: calc(100% - 4em);
+    width: 80em;
 }
 
+.section-container-alt{
+    margin: 0 auto;
+    max-width: calc(100% - 4em);
+    width: 80em;
+}
+
+
+/* hero */
+
+
+
 #hero{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
     height: 80vh;
+    background-color: #fbbec3;
+}
+
+#hero .section-container{
+    height: 100%;
 }
 
 .section_pic-container{
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0%;
+    width: 75%;
 }
 
-.section_text{
+.section_pic-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section_text-container{
     align-self: center;
     text-align: center;
 }
 
-.section_text h1{
+.section_text-container h1{
 font-size: 3rem;
 margin-bottom: 1rem;
 }
@@ -189,11 +204,11 @@ margin-bottom: 1rem;
 .btn-container{
     display:flex;
     justify-content: center;
-    gap: 1rem;
 }
 
 .btn{
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1rem;
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
@@ -202,15 +217,20 @@ margin-bottom: 1rem;
 
 .btn-color-1{
     border: black 0.1rem solid;
+    background-color: #f08e80;
+    color: white;
 }
 
 .btn-color-1:hover{
     cursor: pointer;
-    background-color: lightgrey;
+    background-color: #dd7b6cc2;
 }
 
 /*About us*/
 
+#about{
+    background-color: #f08e80;
+}
  h2{
     text-align: center;
     font-size: 2.5rem;
@@ -222,7 +242,10 @@ margin-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
-#about ul{
+#about .section-container-alt{
+    padding: 2rem;
+}
+#about .section-container-alt ul{
     margin-left: 2rem;
 }
 
@@ -233,6 +256,11 @@ margin-bottom: 1rem;
 
 /* animal stories*/
 
+#animals{
+    background-color: #f5f5dc;
+}
+
+
 
 #animals img{
     min-height: 200px;
@@ -241,13 +269,11 @@ margin-bottom: 1rem;
     max-width: 300px;
 }
 
-.section-container{
-    height: 80%;
-}
+
 
 #animals .section-container{
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1rem;
     
 }
@@ -271,6 +297,15 @@ margin-bottom: 1rem;
 
 /* catfacts */
 
+#catfacts{
+    background-color: #fbbec3
+}
+
+
+#catfacts h2{
+    margin-top: 1.5rem;
+}
+
 #fact-text{
     text-align: center;
     font-size: 24px;
@@ -281,6 +316,7 @@ margin-bottom: 1rem;
 #catfacts .section-container{
     flex-direction: column;
     justify-content: space-between;
+    padding: 2rem 0;
 }
 
 .fact-text-container{
@@ -289,18 +325,22 @@ margin-bottom: 1rem;
 
 /* contact */
 
-
+#contact{
+    background-color: #f08e80;
+}
 #contact h2{
     text-align: left;
 }
 
 #contact .section-container{
     gap: 2rem;
+    padding-top: 5rem;
 
 }
 
 .contact-text-container{
-    padding: 2rem;
+    padding: 3rem;
+
 }
 .form-container{
     
@@ -335,12 +375,21 @@ font-size: 20px;
 /* footer */
 
 footer{
+    background-color: black;
+    color: white;
+}
+
+footer .nav-links a{
+    color: white;
+}
+footer .section-container-alt{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    
     height: 20vh;
-    gap: 2rem;
 }
 
 

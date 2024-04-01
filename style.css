@@ -263,35 +263,31 @@ margin-bottom: 1rem;
 
 
 #animals img{
-    min-height: 200px;
-    min-width: 200px;
-    max-height: 300px;
-    max-width: 300px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 
 
 #animals .section-container{
     flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 1rem 0;
+    justify-content: center;
     gap: 1rem;
-    
+
 }
 
 .animal-container{
     display:flex;
     border: black 2px solid;
-    min-height:300px;
-    min-width: 300px;
-    max-height: 500px;
-    max-width: 600px;
+    width: 550px;
     padding: 1.25rem;
     border-radius: 2rem;
 
 }
 
 .animal-container p{
-    width: 50%;
+    
     padding: .5rem 2rem;
 }
 
@@ -393,9 +389,21 @@ footer .section-container-alt{
 }
 
 
+@media screen and (max-width: 1100px) {
+    #hero{
+        height:70vh;
+    }
 
-
-@media screen and (max-width: 1200px) {
+    #hero h1{
+        font-size:2rem;
+    }
+    #hero p{
+        font-size: 1.2rem;
+    }
+    .section-container, .section-container-alt{
+        width: 100%;
+    }
+    
     #desktop-nav{
         display: none;
     }
@@ -403,4 +411,47 @@ footer .section-container-alt{
     #hamburger-nav{
         display: flex;
     }
+
+    nav{
+        justify-content: space-between;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
 }
+
+@media screen and (max-width: 800px) {
+    #hero .section-container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #hero .section_pic-container{
+        align-self: center;
+    }
+    
+    #contact .section-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #animals .animal-container{
+        flex-direction: column;
+    }
+
+    #animals .animal-container img{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 400px){
+    
+    #contact .section-container p{
+        font-size: 12px;
+    }
+    footer .section-container-alt ul{
+        font-size: 12px;
+    }
+}
+

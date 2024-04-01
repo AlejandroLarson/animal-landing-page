@@ -443,11 +443,7 @@ footer .section-container-alt{
     }
 }
 
-@media screen and (max-width: 800px) {
-    
-}
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     
     #contact .section-container p{
         font-size: 12px;

@@ -15,7 +15,7 @@
             <ul class = "nav-links">
                 <li><a href = "#about">About</a></li>
                 <li><a href = "#animals">Animals</a></li>
-                <li><a href = "#section2">section 2</a></li>
+                <li><a href = "#catfacts">Facts</a></li>
                 <li><a href = "#contact">Contact</a></li>
             </ul>
         </div>
@@ -33,8 +33,8 @@
             <div class = "menu-links">
                 <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
                 <li><a href = "#animals" onclick = "toggleMenu()">Animals</a></li>
-                <li><a href = "#section2" onclick = "toggleMenu()">section 2</a></li>
-                <li><a href = "#contact" onclick = "toggleMenu()">section 3</a></li>
+                <li><a href = "#catfacts" onclick = "toggleMenu()">Facts</a></li>
+                <li><a href = "#contact" onclick = "toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
@@ -43,7 +43,7 @@
             <h1 class = "title"> Animal Wellness Foundation</h1>
             <p class = "section_text_p">Saving lives in Southern California</p>
             <div class = "btn-container">
-                <button class = "btn btn-color-1" onclick = "location.href='./#contact'">Learn More</button>
+                <button class = "btn btn-color-1" onclick = "location.href='./#about'">Learn More</button>
             </div>
         </div>
         <div class = "section_pic-container">
@@ -65,42 +65,82 @@
     <section id = "animals">
         <h2>Animal Stories</h2>
         <div class = "section-container">
-        <div class = "animal-container">
-            <img src = "images/FrankieOlivia.jpg" alt = "pair of kittens">
-            <p>"Best thing that has happened to our family this year by far! Frankie loves to make an appearance on my work zoom calls by climbing up the side of my chair which everyone enjoys. They are so great with the kids too. Olivia sleeps on the top bunk with Oliver every night. Frankie likes to make the rounds. Thank you, thank you, thank you for rescuing them"</p>
-        </div>
-        <div class = "animal-container">
-            <img src = "images/dogSiblings.jpg" alt = "dog siblings">
-            <p>Phoenix & Sedona were rescued from a struggling high kill shelter in Arizona. They were angels from the start and stole everyone's hearts.
+            <div class = "animal-container">
+                <img src = "images/FrankieOlivia.jpg" alt = "pair of kittens">
+                <p>"Best thing that has happened to our family this year by far! Frankie loves to make an appearance on my work zoom calls by climbing up the side of my chair which everyone enjoys. They are so great with the kids too. Olivia sleeps on the top bunk with Oliver every night. Frankie likes to make the rounds. Thank you, thank you, thank you for rescuing them"</p>
+            </div>
+            <div class = "animal-container">
+                <img src = "images/dogSiblings.jpg" alt = "dog siblings">
+                <p>Phoenix & Sedona were rescued from a struggling high kill shelter in Arizona. They were angels from the start and stole everyone's hearts.
 
-                Within weeks, the sisters found their forever guardians and have already made new friends. They continue to get medical care through our partner hospital, Animal Wellness Centers, until spayed and neutered.</p>
-        </div>
-        
-        <div class = "animal-container">
-            <img src = "images/Prince.jpg" alt = "prince the dog">
-            <p>His latest foster fell in love and showed commitment from the very start, being very involved in the details of his health and taking him along everywhere - just the way Prince likes. She recently made Prince officially her companion. We're over the moon for them.</p>
-        </div>
-        
-        <div class = "animal-container"> 
-            <img src = "images/Coco.jpg" alt = "coco the cat">
-            <p>With seniors being overlooked and turned away too often because of appearance and typical medical issues that arise with age, we are beyond grateful to the compassionate people who foster and adopt senior animals. Coco was almost euthanized due to a misdiagnosis and lack of understanding from former guardian.
+                    Within weeks, the sisters found their forever guardians and have already made new friends. They continue to get medical care through our partner hospital, Animal Wellness Centers, until spayed and neutered.</p>
+            </div>
+            
+            <div class = "animal-container">
+                <img src = "images/Prince.jpg" alt = "prince the dog">
+                <p>His latest foster fell in love and showed commitment from the very start, being very involved in the details of his health and taking him along everywhere - just the way Prince likes. She recently made Prince officially her companion. We're over the moon for them.</p>
+            </div>
+            
+            <div class = "animal-container"> 
+                <img src = "images/oldkitty.jpg" alt = "coco the cat">
+                <p>With seniors being overlooked and turned away too often because of appearance and typical medical issues that arise with age, we are beyond grateful to the compassionate people who foster and adopt senior animals. Coco was almost euthanized due to a misdiagnosis and lack of understanding from former guardian.
 
-                Coco found a lovely foster-to-adopt family in a home where she is welcomed, comfortable and thriving. A big thanks for the help of our beloved volunteers!</p>
+                    Coco found a lovely foster-to-adopt family in a home where she is welcomed, comfortable and thriving. A big thanks for the help of our beloved volunteers!</p>
+            </div>
         </div>
-
-        <section id = "catfacts">
-            <h2>Cool Facts About Cats</h2>
-            <p id = "fact-text" ></p>
-            <button class = "btn btn-color-2" onclick = "generateFact()">New Fact</button>
-        </section>
-
-        <section id = "donate">
-            <h2>The Animal Wellness Foundation Emergency Relief Fund</h2>
-            <p>The Animal Wellness Foundation has created the COVID-19 Relief Fund to help pet owners in Southern California with food and medical services for their animals if they've lost a job and are facing an economic hardship in caring for their animals during the current national crisis.  The program will concentrate in the Los Angeles and Southern California, but we will partner with other vet hospitals in other parts of the state where there is support for our fund.  All donations are tax-deductible.</p>
-            <button class = "btn btn-color-1">DONATE</button>
-        </section>
-        
-    </div>
     </section>
+
+    <section id = "catfacts">
+        <div class = "section-container">
+            <h2>Cool Facts About Cats</h2>
+            <div class = "fact-text-container"><p id = "fact-text" ></p></div>
+            <div class = "btn-container">
+            <button class = "btn btn-color-2" onclick = "generateFact()">New Fact</button>
+            </div>
+        </div>
+    </section>
+
+    <section id = "contact">
+        <div class = "section-container">
+            <div class = "contact-text-container">
+                <h2>Contact</h2>
+                <h3>Email or write to us</h3>
+                <p>info@animalwellnessfoundation.org<br>
+                    Animal Wellness Foundation<br>
+                    P.O. BOX 9686<br>
+                    Marina del Rey, CA 90295</p>
+            </div>
+            <div class = "form-container">
+                <form action = "#" method = "post">
+                   
+                <div class = "form-top-container">
+                        
+                    <input type="text" id="name" name="user_name" placeholder="Name" />
+                            
+                    <input type="email" id="mail" name="user_email" placeholder = "Email" />
+
+                </div>
+                       
+                <textarea id="msg" name="user_message" placeholder = "Message"></textarea>
+                 <div class = "btn-container">       
+                    <button class = " btn btn-color-1" type="submit">Send</button>
+                </div>
+                        
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+            <ul class = "nav-links">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#animals">Animals</a></li>
+                <li><a href = "#catfacts">Facts</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        
+        <h3>&#169; The Animal Wellness Foundation </h3>
+    </footer>
 </body>
 </html>

@@ -8,6 +8,11 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    background: peachpuff;
+}
+
+section, nav{
+    background: pink;
 }
 
 html{
@@ -142,8 +147,7 @@ a:hover{
 
 section{
     padding-top: 4vh;
-    height:96vh;
-    margin: 0 10rem;
+    margin: 5rem 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -229,9 +233,12 @@ margin-bottom: 1rem;
 
 /* animal stories*/
 
+
 #animals img{
-    height: 300px;
-    width: 300px;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .section-container{
@@ -248,9 +255,12 @@ margin-bottom: 1rem;
 .animal-container{
     display:flex;
     border: black 2px solid;
+    min-height:300px;
+    min-width: 300px;
     max-height: 500px;
-    width: 600px;
-    padding: 1rem;
+    max-width: 600px;
+    padding: 1.25rem;
+    border-radius: 2rem;
 
 }
 
@@ -259,26 +269,79 @@ margin-bottom: 1rem;
     padding: .5rem 2rem;
 }
 
+/* catfacts */
+
 #fact-text{
     text-align: center;
     font-size: 24px;
     padding: .5rem 2rem;
     margin-bottom: 2rem;
-    max-height: 75%;
 }
 
-#catfacts{
+#catfacts .section-container{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fact-text-container{
+    min-height: 250px;
+}
+
+/* contact */
+
+
+#contact h2{
+    text-align: left;
+}
+
+#contact .section-container{
+    gap: 2rem;
+
+}
+
+.contact-text-container{
+    padding: 2rem;
+}
+.form-container{
+    
+    flex: 1 1 auto;
+    padding: 2rem;
+}
+
+.form-top-container{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-top-container input{
+width: 50%;
+height: 2.75rem;
+padding-left: .5rem;
+font-size: 20px;
+}
+
+.form-container #msg{
+    width: 100%;
+    min-height: 250px;
+    font-size: 20px;
+    padding-left: .5rem;
+}
+
+#msg{
+    margin-bottom: 1.5rem;
+}
+
+/* footer */
+
+footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:60vh;
+    height: 20vh;
+    gap: 2rem;
 }
-
-.btn.btn-color-2{
-    justify-self: flex-end;
-}
-
 
 
 

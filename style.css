@@ -389,19 +389,7 @@ footer .section-container-alt{
 
 
 @media screen and (max-width: 1100px) {
-    #hero{
-        height:70vh;
-    }
 
-    #hero h1{
-        font-size:2rem;
-    }
-    #hero p{
-        font-size: 1.2rem;
-    }
-    .section-container, .section-container-alt{
-        width: 100%;
-    }
     
     #desktop-nav{
         display: none;
@@ -420,15 +408,7 @@ footer .section-container-alt{
 }
 
 @media screen and (max-width: 800px) {
-    #hero .section-container{
-        flex-direction: column;
-        justify-content: space-around;
-    }
 
-    #hero .section_pic-container{
-        align-self: center;
-    }
-    
     #contact .section-container{
         flex-direction: column;
     }
@@ -440,7 +420,34 @@ footer .section-container-alt{
     #animals .animal-container img{
         align-self: center;
     }
+
+    .section_text-container h1{
+        font-size: 2rem;
+
+    }
+
+    .section_text_p{
+        font-size: 1rem;
+    }
 }
+
+@media screen and (max-width: 550px){
+    .section_text-container h1{
+        font-size: 1.5rem;
+        
+
+    }
+
+    .section_text-container{
+        gap: 2rem;
+    }
+
+    .section_text_p{
+        display: none;
+    }
+    
+}
+
 
 @media screen and (max-width: 430px){
     

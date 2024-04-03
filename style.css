@@ -276,6 +276,10 @@ color: white;
 
 }
 
+#animals .section-container-alt h2{
+padding-top: 2rem;
+}
+
 .animal-container{
     display:flex;
     border: black 2px solid;

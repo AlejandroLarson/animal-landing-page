@@ -256,7 +256,7 @@ color: white;
 /* animal stories*/
 
 #animals{
-    background-color: #f5f5dc;
+    background-color: #f9fafb;
 }
 
 
@@ -282,6 +282,7 @@ color: white;
     width: 550px;
     padding: 1.25rem;
     border-radius: 2rem;
+    background-color: #fde0dc;
 
 }
 
@@ -321,7 +322,7 @@ color: white;
 /* contact */
 
 #contact{
-    background-color: #f08e80;
+    background-color: #fde0dc;
 }
 #contact h2{
     text-align: left;

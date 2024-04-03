@@ -167,37 +167,36 @@ a:hover{
 
 
 #hero{
-    height: 80vh;
-    background-color: #fbbec3;
-}
-
-#hero .section-container{
-    height: 100%;
-}
-
-.section_pic-container{
-    width: 75%;
-}
-
-.section_pic-container img{
-    width: 100%;
-    height: 100%;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("images/catsdogs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
 }
 
 
 .section_text-container{
-    align-self: center;
-    text-align: center;
+    padding: 20px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .section_text-container h1{
 font-size: 3rem;
-margin-bottom: 1rem;
+margin: 0;
 }
 
 .section_text_p{
 font-size: 1.5rem;
 margin-bottom: 1rem;
+color: white;
 }
 
 /*button*/

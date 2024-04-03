@@ -387,6 +387,10 @@ footer .section-container-alt{
     height: 20vh;
 }
 
+.title.tiny{
+    display:none;
+}
+
 
 @media screen and (max-width: 1100px) {
 
@@ -450,6 +454,11 @@ footer .section-container-alt{
 
 
 @media screen and (max-width: 430px){
+    .section_text-container > h1{
+        text-align: center;
+        
+    }
+
     
     #contact .section-container p{
         font-size: 12px;
